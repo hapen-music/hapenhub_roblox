@@ -147,6 +147,7 @@ if game.PlaceId == listGame.prison_life then
 	})
 	
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/hub/games/prisonlife.lua', true))()
+	game.CoreGui.loader:Destroy()
 else
 	text.Text = "Game Not Supported."
 	wait(1)
