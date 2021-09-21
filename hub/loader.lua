@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/ver.lua', true))()----importer version of github
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/hub/ver.lua', true))()----importer version of github
 
 if _G.ver=='1.0.0' then
 local loader = Instance.new("ScreenGui")
@@ -146,7 +146,7 @@ if game.PlaceId == listGame.prison_life then
 		Text = 'Loaded Gui!\nEnjoy :)'
 	})
 	
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/games/prisonlife.lua', true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/hub/games/prisonlife.lua', true))()
 else
 	text.Text = "Game Not Supported."
 	wait(1)
