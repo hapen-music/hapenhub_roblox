@@ -140,20 +140,16 @@ if game.PlaceId == listGame.prison_life then
 	text.Text = "Game Loaded! Prison Life"
 	
 	wait(1)
-	
+	game.CoreGui.loader:Destroy()
 	game.StarterGui:SetCore('SendNotification', {
 		Title = 'HapEN Hub';
 		Text = 'Loaded Gui!\nEnjoy :)'
 	})
 	
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/hapen-music/hapenhub_roblox/main/hub/games/prisonlife.lua', true))()
-	game.CoreGui.loader:Destroy()
 else
 	text.Text = "Game Not Supported."
 	wait(1)
 	game.CoreGui.loader:Destroy()
 end
-	
-wait(0.92)
-game.CoreGui.loader:Destroy()
 end
