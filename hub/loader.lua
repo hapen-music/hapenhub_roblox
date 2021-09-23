@@ -20,7 +20,8 @@ local listExploits = {
 	krnl = "Krnl",
 	comet = "Comet",
 	synapse_x = "Synapse X",
-	sentinel = "Sentinel"
+	sentinel = "Sentinel",
+	fluxus = "Fluxus"
 };
 
 ---------------------------------
@@ -104,6 +105,8 @@ elseif _G.Exploit == listExploits.synapse_x then
 	text.Text = "Loaded Exploit! Synapse X"
 elseif _G.Exploit == listExploits.sentinel then
 	text.Text = "Loaded Exploit! Sentinel"
+elseif _G.Exploit == listExploits.fluxus then
+	text.Text = "Loaded Exploit! Fluxus"
 else
 	text.Text = "Opps... Your Exploit is not supported."
 	wait(1)
